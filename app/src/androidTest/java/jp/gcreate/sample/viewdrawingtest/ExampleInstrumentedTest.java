@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("jp.gcreate.sample.viewdrawingtest", appContext.getPackageName());
+        assertEquals("jp.gcreate.sample.viewdrawingtest.uiTest", appContext.getPackageName());
     }
 }
