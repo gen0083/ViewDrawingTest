@@ -20,14 +20,17 @@ public class CustomView extends TextView {
 
     public CustomView(Context context) {
         super(context);
+        initialize();
     }
 
     public CustomView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        initialize();
     }
 
     public CustomView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        initialize();
     }
 
     private void initialize() {
