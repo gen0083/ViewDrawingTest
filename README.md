@@ -127,4 +127,4 @@ Right line was not drawn.
 
 ![By Spoon](./images/screenshot_on_spoon.png)
 
-Probably it was a bug on Spoon.
+Why the difference is occured? Please tell me if you know anything.
