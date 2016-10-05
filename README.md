@@ -127,4 +127,10 @@ Right line was not drawn.
 
 ![By Spoon](./images/screenshot_on_spoon.png)
 
-Why the difference is occured? Please tell me if you know anything.
+Why the difference is occurred?
+
+Probably it causes that different canvas were passed `onDraw()` method to androidTest and non test.
+
+When run androidTest `getHeight()` returned too large value (i.e. 1436).
+
+So underline in screenshots took by Spoon was out of window.
