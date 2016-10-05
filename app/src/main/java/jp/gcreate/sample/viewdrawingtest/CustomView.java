@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.TextView;
 
 /**
@@ -69,6 +70,7 @@ public class CustomView extends TextView {
 
         int width  = canvas.getWidth() - 1;
         int height = canvas.getHeight() - 1;
+        Log.d("test", "canvas:" + canvas + ", height:" + height + ", width:" + width);
 
         if (shouldDrawUp) {
             canvas.drawLine(0, 0, width, 0, paint);
