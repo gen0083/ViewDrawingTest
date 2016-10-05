@@ -134,3 +134,18 @@ Probably it causes that different canvas were passed `onDraw()` method to androi
 When run androidTest `getHeight()` returned too large value (i.e. 1436).
 
 So underline in screenshots took by Spoon was out of window.
+
+### Debug log
+
+On app-UiTest-debug.apk:
+
+```
+10-05 17:35:09.972 1992-1992/jp.gcreate.sample.viewdrawingtest.uiTest D/test: canvas:android.view.GLES20RecordingCanvas@30073153, height:96, width:983
+10-05 17:35:15.412 1992-1992/jp.gcreate.sample.viewdrawingtest.uiTest D/test: canvas:android.view.GLES20RecordingCanvas@2a498faf, height:96, width:983
+```
+
+On app-UiTest-debug-androidTest.apk:
+```
+0-05 17:37:37.955 3888-3888/jp.gcreate.sample.viewdrawingtest.uiTest D/test: canvas:android.view.GLES20RecordingCanvas@375e49fb, height:1436, width:983
+10-05 17:37:37.982 3888-3888/jp.gcreate.sample.viewdrawingtest.uiTest D/test: canvas:android.graphics.Canvas@1cad5ead, height:1919, width:1079
+```
